@@ -10,3 +10,9 @@ def usd_to_egp(request):
     return render(request, 'app/usd-to-egp.html', context=context)
 
 # psst, yes, you'll write code here :)
+
+def get_price(request):
+    context ={
+        'get_price':10,
+    }
+    return render(request, 'app/live-indomie-price.html', context=context)
